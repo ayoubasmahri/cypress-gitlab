@@ -14,11 +14,10 @@ RUN npm install
 COPY . .
 
 # Set environment variables for Allure
-ENV CYPRESS_ALLURE_RESULTS_PATH=/app/allure-results
-ENV ALLURE_OUTPUT_DIR=/app/allure-report
+
 
 # Install Allure Command-Line Tool
 RUN npm install -g allure-commandline --save-dev
 
 # Run Cypress tests and generate the Allure report
-CMD ["sh", "-c", "npx cypress run --env allure=true && allure generate --clean --output ${ALLURE_OUTPUT_DIR} ${CYPRESS_ALLURE_RESULTS_PATH}"]
+CMD ["sh", "-c", "npx cypress run "]
