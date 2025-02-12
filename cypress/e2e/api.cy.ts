@@ -1,4 +1,4 @@
-describe('first', () => {
+describe('Api Test', () => {
   context('Check API Health', () => {
     it('should return a 200 status and success: true', () => {
       cy.request(
