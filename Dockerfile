@@ -1,5 +1,5 @@
 # Use official Cypress base image with Node.js 18
-FROM cypress/included
+FROM cypress/included:latest
 
 # Set the working directory inside the container
 WORKDIR /app
