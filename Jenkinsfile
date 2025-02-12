@@ -10,8 +10,8 @@ pipeline {
 
         stage('Build and Test') {
             steps {
-                docker.image('cypress').inside() {
-                    sh 'npm run cypress:run' 
+                docker.image('your-docker-image-name').inside() {
+                   sh 'npm run cypress:run' 
                 }
             }
         }
